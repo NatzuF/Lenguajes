@@ -15,11 +15,11 @@ varianza2 x y = ((x - media)^2 + (y - media)^2) / 2
         media = (x + y) / 2
 
 clasificaTemperatura :: Int -> String
-clasificaTemperatura t
-    | t <= 0    = "frio extremo"
-    | t <= 15   = "frio"
-    | t <= 25   = "templado"
-    | t <= 35   = "calido"
+clasificaTemperatura temperatura
+    | temperatura <= 0    = "frio extremo"
+    | temperatura <= 15   = "frio"
+    | temperatura <= 25   = "templado"
+    | temperatura <= 35   = "calido"
     | otherwise = "calor extremo"
 
 intercala :: a -> [a] -> [a]
